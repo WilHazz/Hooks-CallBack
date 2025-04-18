@@ -1,5 +1,9 @@
 import React from "react";
 
-export const Incrementar = () => {
-  return <div>Incrementar</div>;
+export const Incrementar = (incrementarPadre) => {
+  return (
+    <>
+      <button onClick={incrementarPadre}>b</button>
+    </>
+  );
 };

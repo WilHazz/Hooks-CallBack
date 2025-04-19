@@ -1,9 +1,12 @@
 import React from "react";
 
-export const Incrementar = (incrementarPadre) => {
+export const Incrementar = React.memo(({ incrementar }) => {
+  console.log("me estoy redibujando");
   return (
     <>
-      <button onClick={incrementarPadre}>b</button>
+      <button className="btn btn-warning" onClick={() => incrementar(10)}>
+        incrementar
+      </button>
     </>
   );
-};
+});
